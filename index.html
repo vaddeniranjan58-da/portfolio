@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Vadde Niranjan - Professional Data Analyst Portfolio. Specializing in SQL, Python, Excel, Power BI, Tableau, and data-driven insights.">
+    <meta name="keywords"
+        content="Portfolio, Data Analyst, SQL, Python, Excel, Power BI, Tableau, Data Science, Business Intelligence">
+    <meta name="author" content="Vadde Niranjan">
+    <meta name="robots" content="index, follow">
+    <title>Vadde Niranjan | Data Analyst</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@0.300.0"></script>
+
+    <!-- Link Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme"> <!-- Defaulting to dark theme for modern premium first impression -->
+
+    <!-- Loader wrapper -->
+    <div class="loader-wrapper" id="loaderWrapper">
+        <div class="loader-content">
+            <div class="loader-logo">Niranjan<span>.data</span></div>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+            <p class="loader-text">Loading Insights...</p>
+        </div>
+    </div>
+
+    <!-- Mouse Glow Effect -->
+    <div class="mouse-glow" id="mouseGlow"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                Niranjan<span></span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+                    <i data-lucide="moon" class="icon-moon"></i>
+                    <i data-lucide="sun" class="icon-sun"></i>
+                </button>
+
+                <!-- Mobile Hamburguer Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#certifications" class="mobile-nav-link">Certifications</a>
+            <a href="#resume" class="mobile-nav-link">Resume</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+
+            <div class="floating-glass-shapes">
+                <div class="glass-shape gshape-1"></div>
+                <div class="glass-shape gshape-2"></div>
+                <div class="glass-shape gshape-3"></div>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-tagline scroll-reveal">Aspiring Data Analyst</span>
+                    <h1 class="hero-title scroll-reveal">
+                        Transforming Data <br>
+                        into Actionable <span class="highlight-typing"><span id="typingElement"></span><span
+                                class="typing-cursor">|</span></span>
+                    </h1>
+                    <p class="hero-description scroll-reveal">
+                        I am an aspiring Data Analyst passionate about SQL, Python, Excel, Power BI and Tableau. I enjoy
+                        analyzing data, building dashboards and solving business problems using data-driven insights.
+                    </p>
+                    <div class="hero-actions scroll-reveal">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual scroll-reveal">
+                    <div class="image-wrapper">
+                        <div class="glowing-border"></div>
+                        <img src="assets/profile.png" alt="Niranjan Image" class="hero-avatar">
+                    </div>
+                    <!-- Decorative Floating Badges -->
+                    <div class="floating-badge badge-1">
+                        <i data-lucide="database" class="badge-icon text-blue"></i>
+                        <div>
+                            <h4>SQL & Python</h4>
+                            <p>Data Queries</p>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i data-lucide="bar-chart-2" class="badge-icon text-purple"></i>
+                        <div>
+                            <h4>Power BI & Tableau</h4>
+                            <p>Visualization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-down-indicator">
+                <span>Scroll Down</span>
+                <i data-lucide="chevrons-down" class="scroll-down-icon"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Get To Know Me</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-image-column scroll-reveal">
+                        <div class="about-img-container">
+                            <div class="about-backdrop"></div>
+                            <div class="about-image">
+                                <img src="assets/profile.png" class="about-img">
+                            </div>
+                            <div class="experience-badge">
+                                <span class="exp-number">CSE</span>
+                                <span class="exp-text">Computer Science<br>Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content-column scroll-reveal">
+                        <h3 class="about-heading">I am Vadde Niranjan, an aspiring Data Analyst based in India.</h3>
+                        <p class="about-text">
+                            I am an aspiring Data Analyst passionate about SQL, Python, Excel, Power BI and Tableau. I
+                            enjoy analyzing datasets, building interactive dashboards, and solving complex business
+                            problems using data-driven insights.
+                        </p>
+                        <p class="about-text">
+                            <strong>Education:</strong> Bachelor of Technology in Computer Science Engineering<br>
+                            <strong>Academic Merit:</strong> 8.84 CGPA score<br>
+                            <strong>Languages Spoken:</strong> English, Telugu, Hindi
+                        </p>
+
+                        <!-- Statistics Grid -->
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <h4 class="stat-number">B.Tech</h4>
+                                <p class="stat-label">CSE Degree</p>
+                            </div>
+                            <div class="stat-card">
+                                <h4 class="stat-number">8.84</h4>
+                                <p class="stat-label">CGPA Grade</p>
+                            </div>
+                            <div class="stat-card">
+                                <h4 class="stat-number">AP</h4>
+                                <p class="stat-label">India (Location)</p>
+                            </div>
+                        </div>
+
+                        <div class="about-buttons">
+                            <a href="#contact" class="btn btn-primary">Contact Me</a>
+                            <a href="Niranjan_DA_Resume.pdf" class="btn btn-outline" download="Niranjan_DA_Resume.pdf">
+                                <i data-lucide="download"></i>
+                                <span>Download Resume</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">My Capabilities</span>
+                    <h2 class="section-title">Core Competencies & Technical Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Section 1: Technical Skills Grid -->
+                <div class="skills-grid scroll-reveal">
+                    <!-- Programming & Query Languages -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <i data-lucide="terminal" class="category-icon text-blue"></i>
+                            <h3>Programming & Query Languages</h3>
+                        </div>
+                        <div class="skills-badges">
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">SQL</span>
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">PostgreSQL</span>
+                            <span class="skill-badge">SQL Server</span>
+                        </div>
+                    </div>
+
+                    <!-- Python Libraries -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <i data-lucide="package" class="category-icon text-purple"></i>
+                            <h3>Python Libraries</h3>
+                        </div>
+                        <div class="skills-badges">
+                            <span class="skill-badge">Pandas</span>
+                            <span class="skill-badge">NumPy</span>
+                            <span class="skill-badge">Matplotlib</span>
+                            <span class="skill-badge">Seaborn</span>
+                            <span class="skill-badge">Scikit-learn</span>
+                        </div>
+                    </div>
+
+                    <!-- Business Intelligence & Visualization -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <i data-lucide="pie-chart" class="category-icon text-green"></i>
+                            <h3>BI & Visualization</h3>
+                        </div>
+                        <div class="skills-badges">
+                            <span class="skill-badge">Power BI</span>
+                            <span class="skill-badge">Tableau</span>
+                            <span class="skill-badge">Microsoft Excel</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <i data-lucide="settings" class="category-icon text-blue"></i>
+                            <h3>Tools</h3>
+                        </div>
+                        <div class="skills-badges">
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">GitHub</span>
+                            <span class="skill-badge">Jupyter Notebook</span>
+                        </div>
+                    </div>
+
+                    <!-- Analytical Skills -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <i data-lucide="bar-chart-2" class="category-icon text-purple"></i>
+                            <h3>Analytical Skills</h3>
+                        </div>
+                        <div class="skills-badges">
+                            <span class="skill-badge">Data Analysis</span>
+                            <span class="skill-badge">Business Analysis</span>
+                            <span class="skill-badge">Statistical Analysis</span>
+                            <span class="skill-badge">Descriptive Analytics</span>
+                            <span class="skill-badge">Diagnostic Analytics</span>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <i data-lucide="users" class="category-icon text-green"></i>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <div class="skills-badges">
+                            <span class="skill-badge">Presentation & Communication</span>
+                            <span class="skill-badge">Analytical Thinking</span>
+                            <span class="skill-badge">Data Storytelling</span>
+                            <span class="skill-badge">Detail-Oriented</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Core Competencies -->
+                <div class="skills-category-card scroll-reveal" style="margin-top: 32px; width: 100%;">
+                    <div class="category-header" style="margin-bottom: 28px;">
+                        <i data-lucide="layers" class="category-icon text-blue"></i>
+                        <h3 style="font-size: 1.35rem; font-weight: 700;">Core Competencies</h3>
+                    </div>
+                    <div class="competencies-columns-container">
+                        <!-- Column 1 -->
+                        <div class="competency-vertical-col">
+                            <div class="competency-item-pills">
+                                <i data-lucide="database"></i>
+                                <span>ETL</span>
+                            </div>
+                            <div class="competency-item-pills">
+                                <i data-lucide="brush"></i>
+                                <span>Data Cleaning</span>
+                            </div>
+                            <div class="competency-item-pills">
+                                <i data-lucide="shuffle"></i>
+                                <span>Data Transformation</span>
+                            </div>
+                            <div class="competency-item-pills">
+                                <i data-lucide="git-branch"></i>
+                                <span>Data Modeling</span>
+                            </div>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="competency-vertical-col">
+                            <div class="competency-item-pills">
+                                <i data-lucide="binary"></i>
+                                <span>Exploratory Data Analysis (EDA)</span>
+                            </div>
+                            <div class="competency-item-pills">
+                                <i data-lucide="trending-up"></i>
+                                <span>Business Intelligence</span>
+                            </div>
+                            <div class="competency-item-pills">
+                                <i data-lucide="layout"></i>
+                                <span>Dashboard Development</span>
+                            </div>
+                            <div class="competency-item-pills">
+                                <i data-lucide="target"></i>
+                                <span>KPI Tracking</span>
+                            </div>
+                        </div>
+                        <!-- Column 3 -->
+                        <div class="competency-vertical-col">
+                            <div class="competency-item-pills">
+                                <i data-lucide="file-text"></i>
+                                <span>Reporting</span>
+                            </div>
+                            <div class="competency-item-pills">
+                                <i data-lucide="filter"></i>
+                                <span>Power Query</span>
+                            </div>
+                            <div class="competency-item-pills">
+                                <i data-lucide="calculator"></i>
+                                <span>DAX</span>
+                            </div>
+                        </div>
+                        <!-- Column 4 -->
+                        <div class="competency-vertical-col">
+                            <div class="competency-item-pills">
+                                <i data-lucide="line-chart"></i>
+                                <span>Predictive Analytics</span>
+                            </div>
+                            <div class="competency-item-pills">
+                                <i data-lucide="presentation"></i>
+                                <span>Business Reporting</span>
+                            </div>
+                            <div class="competency-item-pills">
+                                <i data-lucide="eye"></i>
+                                <span>Data Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Showcase Of My Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="project-filters scroll-reveal">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="sql-python">SQL & Python</button>
+                    <button class="filter-btn" data-filter="powerbi-excel">Power BI & Excel</button>
+                    <button class="filter-btn" data-filter="tableau">Tableau</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card scroll-reveal" data-category="powerbi-excel">
+                        <div class="project-image">
+                            <img src="assets/Hospitality Analytics/hospitality.png"
+                                alt="Hospitality Analytics Dashboard">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-icon" aria-label="View Github Repository"><i
+                                            data-lucide="github"></i></a>
+                                    <a href="#" class="project-link-icon" aria-label="View Interactive Dashboard"><i
+                                            data-lucide="external-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">SQL / Power BI / Excel</span>
+                            <h3 class="project-title">Hospitality Analytics Dashboard</h3>
+                            <p class="project-desc">
+                                Analyzed over 134,000 hotel booking records using SQL and Excel to evaluate revenue,
+                                occupancy, and booking trends. Built an interactive Power BI dashboard tracking KPIs.
+                            </p>
+                            <div class="project-tech">
+                                <span>SQL</span>
+                                <span>Power BI</span>
+                                <span>Excel</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card scroll-reveal" data-category="tableau">
+                        <div class="project-image">
+                            <img src="assets/HR Attrition Rate Analytics/hr_attrition.png"
+                                alt="HR Attrition Rate Analysis">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-icon" aria-label="View Github Repository"><i
+                                            data-lucide="github"></i></a>
+                                    <a href="#" class="project-link-icon" aria-label="View Tableau Story"><i
+                                            data-lucide="external-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Python / Excel / Tableau / Machine Learning</span>
+                            <h3 class="project-title">HR Attrition Rate Analysis</h3>
+                            <p class="project-desc">
+                                Built a Random Forest Classifier using 1,470 employee records and 35+ workforce
+                                attributes to predict attrition. Performed data cleaning, feature engineering, and
+                                exploratory analysis.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>Tableau</span>
+                                <span>Random Forest</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card scroll-reveal" data-category="sql-python">
+                        <div class="project-image">
+                            <img src="assets/Customer behavior Analysis/customer_behavior.png"
+                                alt="Customer Shopping Behavior Analysis">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-icon" aria-label="View Python Code"><i
+                                            data-lucide="github"></i></a>
+                                    <a href="#" class="project-link-icon" aria-label="View Model Performance"><i
+                                            data-lucide="external-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Python / SQL / Power BI</span>
+                            <h3 class="project-title">Customer Shopping Behavior Analysis</h3>
+                            <p class="project-desc">
+                                Examined 3,900+ customer transactions to identify purchasing patterns and customer
+                                segments. Performed data cleaning and exploratory analysis to understand consumer
+                                behavior.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>Power BI</span>
+                                <span>Pandas</span>
+                            </div>
+                        </div </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications-section" id="certifications">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">My Achievements</span>
+                    <h2 class="section-title">Certifications & Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="certs-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card scroll-reveal">
+                        <div class="cert-icon-wrapper">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <span class="cert-issuer">freeCodeCamp</span>
+                        <h3 class="cert-title">Data Analysis with Python</h3>
+                        <p class="cert-description">
+                            Certified in data analysis methodologies using Python. Explored Pandas, NumPy, Matplotlib,
+                            and Seaborn to clean, manipulate, and visualize diverse datasets.
+                        </p>
+                        <a href="#" class="cert-link">
+                            <span>View Credential</span>
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card scroll-reveal">
+                        <div class="cert-icon-wrapper">
+                            <i data-lucide="scroll"></i>
+                        </div>
+                        <span class="cert-issuer">ExcelR</span>
+                        <h3 class="cert-title">Data Analyst Course</h3>
+                        <p class="cert-description">
+                            Completed comprehensive training in data warehousing, relational database queries (SQL),
+                            advanced spreadsheet modeling (Excel), and interactive business reporting (Power BI).
+                        </p>
+                        <a href="#" class="cert-link">
+                            <span>View Credential</span>
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card scroll-reveal">
+                        <div class="cert-icon-wrapper">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+                        <span class="cert-issuer">AI Variant</span>
+                        <h3 class="cert-title">AI Variant Internship</h3>
+                        <p class="cert-description">
+                            Acquired hands-on industry experience building predictive models, optimizing data
+                            preprocessing pipelines, and structuring analytical solutions for machine learning
+                            workflows.
+                        </p>
+                        <a href="#" class="cert-link">
+                            <span>View Credentia</span>
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section class="resume-section" id="resume">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">My Credentials</span>
+                    <h2 class="section-title">Curriculum Vitae</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="resume-wrapper scroll-reveal">
+                    <p class="resume-text">
+                        Click the button below to download the latest version of my resume in PDF format.
+                    </p>
+
+                    <div class="resume-actions-container">
+                        <a href="Niranjan_DA_Resume.pdf" class="btn btn-primary btn-download" id="downloadResumeBtn"
+                            target="_blank" download="Niranjan_DA_Resume.pdf">
+                            <i data-lucide="download-cloud"></i>
+                            <span>Download Resume</span>
+                        </a>
+                        <div id="resumeStatusMsg" class="resume-status-msg">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Resume Placeholder Modal -->
+        <div class="resume-modal" id="resumeModal" role="dialog" aria-modal="true" aria-hidden="true"
+            aria-labelledby="modalNameTitle">
+            <div class="resume-modal-content">
+                <button class="close-modal-btn" id="closeModalBtn" aria-label="Close modal">
+                    <i data-lucide="x"></i>
+                </button>
+
+                <div class="modal-alert-banner">
+                    <i data-lucide="info"></i>
+                    <span>Notice: <strong>Niranjan_DA_Resume.pdf</strong> is currently missing on the server. Showing a
+                        visual
+                        placeholder resume instead.</span>
+                </div>
+
+                <!-- Visual Resume Page Layout -->
+                <div class="visual-resume-page">
+                    <header class="resume-header">
+                        <h1 id="modalNameTitle">VADDE NIRANJAN</h1>
+                        <p class="resume-subheader">Data Analyst | Computer Science Engineer</p>
+                        <div class="resume-contact-row">
+                            <span><i data-lucide="map-pin"></i> Andhra Pradesh, India</span>
+                            <span><i data-lucide="mail"></i> vaddeniranjan58@gmail.com</span>
+                            <span><i data-lucide="globe"></i> Portfolio: Niranjan.data</span>
+                        </div>
+                    </header>
+
+                    <div class="resume-columns">
+                        <!-- Left Column -->
+                        <div class="resume-left-col">
+                            <section class="resume-sub-sec">
+                                <h3>Summary</h3>
+                                <p>
+                                    Aspiring Data Analyst passionate about SQL, Python, Excel, Power BI, and Tableau.
+                                    Enthusiastic about analyzing datasets, constructing interactive dashboard
+                                    representations, and generating actionable business intelligence.
+                                </p>
+                            </section>
+
+                            <section class="resume-sub-sec">
+                                <h3>Education</h3>
+                                <div class="resume-item">
+                                    <h4>Bachelor of Technology (CSE)</h4>
+                                    <p class="resume-item-sub">Computer Science Engineering | CGPA: 8.84</p>
+                                </div>
+                            </section>
+
+                            <section class="resume-sub-sec">
+                                <h3>Certifications</h3>
+                                <div class="resume-item">
+                                    <h4>Data Analysis with Python</h4>
+                                    <p class="resume-item-sub">freeCodeCamp</p>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>Data Analyst Course</h4>
+                                    <p class="resume-item-sub">ExcelR</p>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="resume-right-col">
+                            <section class="resume-sub-sec">
+                                <h3>Core Skills</h3>
+                                <div class="resume-skills-badge-list">
+                                    <span>SQL</span>
+                                    <span>Python</span>
+                                    <span>Excel</span>
+                                    <span>Power BI</span>
+                                    <span>Tableau</span>
+                                    <span>Pandas</span>
+                                    <span>NumPy</span>
+                                    <span>Power Query</span>
+                                    <span>DAX</span>
+                                </div>
+                            </section>
+
+                            <section class="resume-sub-sec">
+                                <h3>Experience</h3>
+                                <div class="resume-item">
+                                    <h4>Data Analyst Intern</h4>
+                                    <p class="resume-item-sub">AI Variant Internship</p>
+                                    <p class="resume-item-desc">Assisted in Data Collection, cleaning, and analysis
+                                    </p>
+                                </div>
+                            </section>
+
+                            <section class="resume-sub-sec">
+                                <h3>Key Projects</h3>
+                                <div class="resume-item">
+                                    <h4>Hospitality Analytics Dashboard</h4>
+                                    <p class="resume-item-desc">Analyzed over 134k hotel booking records via SQL, Excel,
+                                        and Power BI.</p>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>HR Attrition Dashboard</h4>
+                                    <p class="resume-item-desc">Tableau dashboard visualising employee attrition risk
+                                        factors.</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Let's Work Together</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info scroll-reveal">
+                        <h3 class="contact-heading">Got a project in mind? Let's discuss.</h3>
+                        <p class="contact-description">
+                            Fill out the form to outline your requirements, or reach out directly via email. I will
+                            reply within 24 hours.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="contact-icon-wrapper">
+                                    <i data-lucide="mail" class="text-blue"></i>
+                                </div>
+                                <div>
+                                    <h4>Email Me</h4>
+                                    <a href="mailto:vaddeniranjan58@gmail.com">vaddeniranjan58@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-icon-wrapper">
+                                    <i data-lucide="phone" class="text-blue"></i>
+                                </div>
+                                <div>
+                                    <h4>Call Me</h4>
+                                    <a href="tel:+919346281549">+91 93462 81549</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-icon-wrapper">
+                                    <i data-lucide="linkedin" class="text-blue"></i>
+                                </div>
+
+                                <div>
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://linkedin.com/in/vadde-niranjan"
+                                        target="_blank">linkedin.com/in/vadde-niranjan</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-icon-wrapper">
+                                    <i data-lucide="github" class="text-blue"></i>
+                                </div>
+                                <div>
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/vaddeniranjan58-da"
+                                        target="_blank">github.com/vaddeniranjan58-da</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container scroll-reveal">
+                        <form id="contactForm" class="contact-form" autocomplete="off">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" required placeholder=" ">
+                                    <label for="name">Your Name</label>
+                                    <span class="input-focus-line"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" required placeholder=" ">
+                                    <label for="email">Your Email</label>
+                                    <span class="input-focus-line"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required placeholder=" ">
+                                <label for="subject">Subject</label>
+                                <span class="input-focus-line"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                                <label for="message">Your Message</label>
+                                <span class="input-focus-line"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span>
+                                <i data-lucide="send" class="btn-submit-icon"></i>
+                            </button>
+                            <div class="form-message" id="formMessage"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo">Niranjan<span>.data</span></a>
+                <p>Transforming complex datasets into actionable business intelligence.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to my newsletter for data analysis articles and dashboard tips.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Email Address" required aria-label="Email address for newsletter">
+                    <button type="submit" aria-label="Subscribe"><i data-lucide="chevron-right"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vadde Niranjan. All rights reserved.</p>
+            <p class="built-with">Built with <i data-lucide="heart" class="heart-icon"></i> using HTML, CSS, and Vanilla
+                JS</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollTopBtn" aria-label="Scroll to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Project Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
