@@ -2217,10 +2217,11 @@ body.light-theme .icon-moon {
 .rcp-stat-num {
     font-size: 1.8rem;
     font-weight: 800;
-    color: var(--text-primary);
     background: linear-gradient(135deg, var(--text-primary), var(--primary-light));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .rcp-stat-label {
