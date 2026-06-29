@@ -5,12 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Vadde Niranjan - Professional Data Analyst Portfolio. Specializing in SQL, Python, Excel, Power BI, Tableau, and data-driven insights.">
+        content="Aspiring Data Analyst skilled in SQL, Python, Excel, Power BI, Tableau, ETL, EDA, Dashboard Development, Business Intelligence, and Data Visualization.">
     <meta name="keywords"
-        content="Portfolio, Data Analyst, SQL, Python, Excel, Power BI, Tableau, Data Science, Business Intelligence">
+        content="Portfolio, Data Analyst, SQL, Python, Excel, Power BI, Tableau, Data Science, Business Intelligence, ETL, EDA">
     <meta name="author" content="Vadde Niranjan">
     <meta name="robots" content="index, follow">
-    <title>Vadde Niranjan | Data Analyst</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/vaddeniranjan58-da">
+    <meta property="og:title" content="Vadde Niranjan | Data Analyst Portfolio">
+    <meta property="og:description"
+        content="Aspiring Data Analyst skilled in SQL, Python, Excel, Power BI, Tableau, ETL, EDA, Dashboard Development, Business Intelligence, and Data Visualization.">
+    <meta property="og:image" content="profile.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Vadde Niranjan | Data Analyst Portfolio">
+    <meta property="twitter:description"
+        content="Aspiring Data Analyst skilled in SQL, Python, Excel, Power BI, Tableau, ETL, EDA, Dashboard Development, Business Intelligence, and Data Visualization.">
+    <meta property="twitter:image" content="profile.png">
+
+    <title>Vadde Niranjan | Data Analyst Portfolio</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +37,9 @@
 
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@0.300.0"></script>
+
+    <!-- EmailJS SDK CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <!-- Link Stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -59,6 +78,7 @@
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#certifications" class="nav-link">Certifications</a>
                 <a href="#resume" class="nav-link">Resume</a>
@@ -87,6 +107,7 @@
             <a href="#home" class="mobile-nav-link">Home</a>
             <a href="#about" class="mobile-nav-link">About</a>
             <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#experience" class="mobile-nav-link">Experience</a>
             <a href="#projects" class="mobile-nav-link">Projects</a>
             <a href="#certifications" class="mobile-nav-link">Certifications</a>
             <a href="#resume" class="mobile-nav-link">Resume</a>
@@ -113,7 +134,7 @@
                 <div class="hero-content">
                     <span class="hero-tagline scroll-reveal">Aspiring Data Analyst</span>
                     <h1 class="hero-title scroll-reveal">
-                        Transforming Data <br>
+                        Transforming Raw Data <br>
                         into Actionable <span class="highlight-typing"><span id="typingElement"></span><span
                                 class="typing-cursor">|</span></span>
                     </h1>
@@ -121,6 +142,19 @@
                         I am an aspiring Data Analyst passionate about SQL, Python, Excel, Power BI and Tableau. I enjoy
                         analyzing data, building dashboards and solving business problems using data-driven insights.
                     </p>
+                    <div class="hero-socials scroll-reveal">
+                        <a href="https://github.com/vaddeniranjan58-da" target="_blank" rel="noopener noreferrer"
+                            class="hero-social-link" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/vadde-niranjan" target="_blank" rel="noopener noreferrer"
+                            class="hero-social-link" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:vaddeniranjan58@gmail.com" class="hero-social-link" aria-label="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
                     <div class="hero-actions scroll-reveal">
                         <a href="#projects" class="btn btn-primary">
                             <span>View Projects</span>
@@ -215,9 +249,9 @@
 
                         <div class="about-buttons">
                             <a href="#contact" class="btn btn-primary">Contact Me</a>
-                            <a href="Niranjan_DA_Resume.pdf" class="btn btn-outline" download="Niranjan_DA_Resume.pdf">
-                                <i data-lucide="download"></i>
-                                <span>Download Resume</span>
+                            <a href="resume.pdf" target="_blank" class="btn btn-outline">
+                                <i data-lucide="external-link"></i>
+                                <span>View Resume</span>
                             </a>
                         </div>
                     </div>
@@ -402,6 +436,50 @@
             </div>
         </section>
 
+        <!-- Experience Section -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Hands-on Industry Experience</span>
+                    <h2 class="section-title">Professional Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="experience-timeline scroll-reveal">
+                    <!-- Experience Card -->
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-role-company">
+                                <h3 class="experience-role">Data Analyst Intern</h3>
+                                <span class="experience-company">AI Variant</span>
+                            </div>
+                            <span class="experience-duration">2 Months</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Worked on real-world data analysis tasks using Python and SQL.</li>
+                            <li>Performed data cleaning, preprocessing, and exploratory data analysis.</li>
+                            <li>Assisted in developing analytical dashboards and reports.</li>
+                            <li>Worked with datasets to identify trends, patterns, and business insights.</li>
+                            <li>Improved data quality through transformation and validation techniques.</li>
+                            <li>Collaborated with mentors on analytics and machine learning workflows.</li>
+                        </ul>
+                        <div class="experience-skills">
+                            <span class="experience-skills-title">Skills Used:</span>
+                            <div class="experience-skills-badges">
+                                <span class="exp-skill-badge">Python</span>
+                                <span class="exp-skill-badge">SQL</span>
+                                <span class="exp-skill-badge">Pandas</span>
+                                <span class="exp-skill-badge">NumPy</span>
+                                <span class="exp-skill-badge">Excel</span>
+                                <span class="exp-skill-badge">Data Cleaning</span>
+                                <span class="exp-skill-badge">EDA</span>
+                                <span class="exp-skill-badge">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Projects Section -->
         <section class="projects-section" id="projects">
@@ -425,11 +503,12 @@
                     <!-- Project 1 -->
                     <article class="project-card scroll-reveal" data-category="powerbi-excel">
                         <div class="project-image">
-                            <img src="hospitality.png" alt="Hospitality Analytics Dashboard">
+                            <img src="hospitality.png" alt="Hospitality Analytics Dashboard" loading="lazy">
                             <div class="project-overlay">
                                 <div class="project-links">
-                                    <a href="#" class="project-link-icon" aria-label="View Github Repository"><i
-                                            data-lucide="github"></i></a>
+                                    <a href="https://github.com/vaddeniranjan58-da/Hospitality-Analytics"
+                                        target="_blank" rel="noopener noreferrer" class="project-link-icon"
+                                        aria-label="View Github Repository"><i data-lucide="github"></i></a>
                                     <a href="#" class="project-link-icon" aria-label="View Interactive Dashboard"><i
                                             data-lucide="external-link"></i></a>
                                 </div>
@@ -438,10 +517,18 @@
                         <div class="project-info">
                             <span class="project-tag">SQL / Power BI / Excel</span>
                             <h3 class="project-title">Hospitality Analytics Dashboard</h3>
-                            <p class="project-desc">
-                                Analyzed over 134,000 hotel booking records using SQL and Excel to evaluate revenue,
-                                occupancy, and booking trends. Built an interactive Power BI dashboard tracking KPIs.
-                            </p>
+                            <div class="project-desc">
+                                <ul>
+                                    <li>Analyzed 135,000+ hotel booking records.</li>
+                                    <li>Built interactive Power BI dashboards.</li>
+                                    <li>Designed KPIs for booking trends, cancellations, occupancy, and revenue.</li>
+                                </ul>
+                            </div>
+                            <a href="https://github.com/vaddeniranjan58-da/Hospitality-Analytics" target="_blank"
+                                rel="noopener noreferrer" class="project-github-btn">
+                                <i data-lucide="github"></i>
+                                <span>View on GitHub</span>
+                            </a>
                             <div class="project-tech">
                                 <span>SQL</span>
                                 <span>Power BI</span>
@@ -453,11 +540,12 @@
                     <!-- Project 2 -->
                     <article class="project-card scroll-reveal" data-category="tableau">
                         <div class="project-image">
-                            <img src="hr_attrition.png" alt="HR Attrition Rate Analysis">
+                            <img src="hr_attrition.png" alt="HR Attrition Rate Analysis" loading="lazy">
                             <div class="project-overlay">
                                 <div class="project-links">
-                                    <a href="#" class="project-link-icon" aria-label="View Github Repository"><i
-                                            data-lucide="github"></i></a>
+                                    <a href="https://github.com/vaddeniranjan58-da/HR-Attrition-Analytics"
+                                        target="_blank" rel="noopener noreferrer" class="project-link-icon"
+                                        aria-label="View Github Repository"><i data-lucide="github"></i></a>
                                     <a href="#" class="project-link-icon" aria-label="View Tableau Story"><i
                                             data-lucide="external-link"></i></a>
                                 </div>
@@ -465,12 +553,19 @@
                         </div>
                         <div class="project-info">
                             <span class="project-tag">Python / Excel / Tableau / Machine Learning</span>
-                            <h3 class="project-title">HR Attrition Rate Analysis</h3>
-                            <p class="project-desc">
-                                Built a Random Forest Classifier using 1,470 employee records and 35+ workforce
-                                attributes to predict attrition. Performed data cleaning, feature engineering, and
-                                exploratory analysis.
-                            </p>
+                            <h3 class="project-title">HR Attrition Analysis</h3>
+                            <div class="project-desc">
+                                <ul>
+                                    <li>Analyzed 1,470 employee records.</li>
+                                    <li>Built HR dashboard using Python, Tableau, and Excel.</li>
+                                    <li>Identified key factors affecting employee attrition.</li>
+                                </ul>
+                            </div>
+                            <a href="https://github.com/vaddeniranjan58-da/HR-Attrition-Analytics" target="_blank"
+                                rel="noopener noreferrer" class="project-github-btn">
+                                <i data-lucide="github"></i>
+                                <span>View on GitHub</span>
+                            </a>
                             <div class="project-tech">
                                 <span>Python</span>
                                 <span>Pandas</span>
@@ -483,11 +578,12 @@
                     <!-- Project 3 -->
                     <article class="project-card scroll-reveal" data-category="sql-python">
                         <div class="project-image">
-                            <img src="customer_behavior.png" alt="Customer Shopping Behavior Analysis">
+                            <img src="customer_behavior.png" alt="Customer Shopping Behavior Analysis" loading="lazy">
                             <div class="project-overlay">
                                 <div class="project-links">
-                                    <a href="#" class="project-link-icon" aria-label="View Python Code"><i
-                                            data-lucide="github"></i></a>
+                                    <a href="https://github.com/vaddeniranjan58-da/Customer-Shopping-Behaviour-Analytics"
+                                        target="_blank" rel="noopener noreferrer" class="project-link-icon"
+                                        aria-label="View Python Code"><i data-lucide="github"></i></a>
                                     <a href="#" class="project-link-icon" aria-label="View Model Performance"><i
                                             data-lucide="external-link"></i></a>
                                 </div>
@@ -496,18 +592,63 @@
                         <div class="project-info">
                             <span class="project-tag">Python / SQL / Power BI</span>
                             <h3 class="project-title">Customer Shopping Behavior Analysis</h3>
-                            <p class="project-desc">
-                                Examined 3,900+ customer transactions to identify purchasing patterns and customer
-                                segments. Performed data cleaning and exploratory analysis to understand consumer
-                                behavior.
-                            </p>
+                            <div class="project-desc">
+                                <ul>
+                                    <li>Analyzed 3,900+ customer transactions.</li>
+                                    <li>Performed EDA and customer segmentation.</li>
+                                    <li>Created dashboards showing purchasing behavior and revenue trends.</li>
+                                </ul>
+                            </div>
+                            <a href="https://github.com/vaddeniranjan58-da/Customer-Shopping-Behaviour-Analytics"
+                                target="_blank" rel="noopener noreferrer" class="project-github-btn">
+                                <i data-lucide="github"></i>
+                                <span>View on GitHub</span>
+                            </a>
                             <div class="project-tech">
                                 <span>Python</span>
                                 <span>SQL</span>
                                 <span>Power BI</span>
                                 <span>Pandas</span>
                             </div>
-                        </div </article>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card scroll-reveal" data-category="powerbi-excel">
+                        <div class="project-image">
+                            <img src="sales_analysis.png" alt="Sales Data Analysis" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/vaddeniranjan58-da/Sales-Analysis" target="_blank"
+                                        rel="noopener noreferrer" class="project-link-icon"
+                                        aria-label="View Github Repository"><i data-lucide="github"></i></a>
+                                    <a href="#" class="project-link-icon" aria-label="View Dashboard"><i
+                                            data-lucide="external-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Power BI / Excel</span>
+                            <h3 class="project-title">Sales Data Analysis</h3>
+                            <div class="project-desc">
+                                <ul>
+                                    <li>Built sales dashboard tracking revenue, profit margins, customer trends, and
+                                        regional performance.</li>
+                                    <li>Used Power BI and Excel to visualize business KPIs.</li>
+                                </ul>
+                            </div>
+                            <a href="https://github.com/vaddeniranjan58-da/Sales-Analysis" target="_blank"
+                                rel="noopener noreferrer" class="project-github-btn">
+                                <i data-lucide="github"></i>
+                                <span>View on GitHub</span>
+                            </a>
+                            <div class="project-tech">
+                                <span>Power BI</span>
+                                <span>Excel</span>
+                                <span>Data Analysis</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -533,8 +674,8 @@
                             Certified in data analysis methodologies using Python. Explored Pandas, NumPy, Matplotlib,
                             and Seaborn to clean, manipulate, and visualize diverse datasets.
                         </p>
-                        <a href="#" class="cert-link">
-                            <span>View Credential</span>
+                        <a href="freecodecamp.jpg" target="_blank" class="cert-link">
+                            <span>View Certificate</span>
                             <i data-lucide="external-link"></i>
                         </a>
                     </div>
@@ -550,8 +691,8 @@
                             Completed comprehensive training in data warehousing, relational database queries (SQL),
                             advanced spreadsheet modeling (Excel), and interactive business reporting (Power BI).
                         </p>
-                        <a href="#" class="cert-link">
-                            <span>View Credential</span>
+                        <a href="excelr.jpeg" target="_blank" class="cert-link">
+                            <span>View Certificate</span>
                             <i data-lucide="external-link"></i>
                         </a>
                     </div>
@@ -561,15 +702,15 @@
                         <div class="cert-icon-wrapper">
                             <i data-lucide="briefcase"></i>
                         </div>
-                        <span class="cert-issuer">AI Variant</span>
-                        <h3 class="cert-title">AI Variant Internship</h3>
+                        <span class="cert-issuer">NPTEL (SWAYAM)</span>
+                        <h3 class="cert-title">NPTEL STAR Certification</h3>
                         <p class="cert-description">
-                            Acquired hands-on industry experience building predictive models, optimizing data
-                            preprocessing pipelines, and structuring analytical solutions for machine learning
-                            workflows.
+                            Awarded the NPTEL STAR Certification for successfully completing multiple NPTEL courses with
+                            consistent academic excellence, demonstrating strong technical knowledge, problem-solving
+                            ability, and commitment to continuous learning.
                         </p>
-                        <a href="#" class="cert-link">
-                            <span>View Credentia</span>
+                        <a href="nptel.jpeg" target="_blank" class="cert-link">
+                            <span>View Certificate</span>
                             <i data-lucide="external-link"></i>
                         </a>
                     </div>
@@ -587,18 +728,65 @@
                 </div>
 
                 <div class="resume-wrapper scroll-reveal">
-                    <p class="resume-text">
-                        Click the button below to download the latest version of my resume in PDF format.
-                    </p>
+                    <div class="rcp-card-preview">
+                        <!-- Top Header -->
+                        <div class="rcp-header">
+                            <div class="rcp-profile">
+                                <div class="rcp-avatar-glow">
+                                    <i data-lucide="user"></i>
+                                </div>
+                                <div class="rcp-title-block">
+                                    <h3 class="rcp-name">Vadde Niranjan</h3>
+                                    <span class="rcp-role">Aspiring Data Analyst</span>
+                                </div>
+                            </div>
+                            <div class="rcp-education">
+                                <span class="rcp-label">Education</span>
+                                <h4 class="rcp-school">Bachelor of Technology</h4>
+                                <span class="rcp-major">Computer Science Engineering</span>
+                                <span class="rcp-cgpa">CGPA: 8.84</span>
+                            </div>
+                        </div>
 
-                    <div class="resume-actions-container">
-                        <a href="Niranjan_DA_Resume.pdf" class="btn btn-primary btn-download" id="downloadResumeBtn"
-                            target="_blank" download="Niranjan_DA_Resume.pdf">
-                            <i data-lucide="download-cloud"></i>
-                            <span>Download Resume</span>
-                        </a>
-                        <div id="resumeStatusMsg" class="resume-status-msg">
-                            <!-- Populated dynamically via JS -->
+                        <!-- Stats Row -->
+                        <div class="rcp-stats-row">
+                            <div class="rcp-stat-box">
+                                <span class="rcp-stat-num">4+</span>
+                                <span class="rcp-stat-label">Analytics Projects</span>
+                            </div>
+                            <div class="rcp-stat-box">
+                                <span class="rcp-stat-num">3+</span>
+                                <span class="rcp-stat-label">Industry Certifications</span>
+                            </div>
+                        </div>
+
+                        <!-- Skills Tags -->
+                        <div class="rcp-skills-section">
+                            <span class="rcp-section-label">Core Technical Skills</span>
+                            <div class="rcp-skills-list">
+                                <span class="rcp-skill-tag">SQL</span>
+                                <span class="rcp-skill-tag">Python</span>
+                                <span class="rcp-skill-tag">Power BI</span>
+                                <span class="rcp-skill-tag">Excel</span>
+                                <span class="rcp-skill-tag">Tableau</span>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="rcp-footer">
+                            <div class="rcp-actions">
+                                <a href="resume.pdf" class="btn btn-primary" id="downloadResumeBtn" target="_blank">
+                                    <i data-lucide="external-link"></i>
+                                    <span>View Resume</span>
+                                </a>
+                                <a href="resume.pdf" class="btn btn-outline" download="Vadde_Niranjan_Resume.pdf">
+                                    <i data-lucide="download"></i>
+                                    <span>Download PDF</span>
+                                </a>
+                            </div>
+                            <div id="resumeStatusMsg" class="resume-status-msg">
+                                <!-- Populated dynamically via JS -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -615,7 +803,7 @@
 
                 <div class="modal-alert-banner">
                     <i data-lucide="info"></i>
-                    <span>Notice: <strong>Niranjan_DA_Resume.pdf</strong> is currently missing on the server. Showing a
+                    <span>Notice: <strong>Resume.pdf</strong> is currently missing on the server. Showing a
                         visual
                         placeholder resume instead.</span>
                 </div>
@@ -824,6 +1012,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#resume">Resume</a></li>
@@ -831,13 +1020,17 @@
                 </ul>
             </div>
 
-            <div class="footer-newsletter">
-                <h4>Stay Updated</h4>
-                <p>Subscribe to my newsletter for data analysis articles and dashboard tips.</p>
-                <form class="newsletter-form" id="newsletterForm">
-                    <input type="email" placeholder="Email Address" required aria-label="Email address for newsletter">
-                    <button type="submit" aria-label="Subscribe"><i data-lucide="chevron-right"></i></button>
-                </form>
+            <div class="footer-connect">
+                <h4>Let's Connect</h4>
+                <p>Interested in collaborating on data analytics, SQL, Python, Power BI, Tableau, or business
+                    intelligence projects?</p>
+                <div class="footer-social-icons">
+                    <a href="https://github.com/vaddeniranjan58-da" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="https://linkedin.com/in/vadde-niranjan" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="mailto:vaddeniranjan58@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+                </div>
             </div>
         </div>
 

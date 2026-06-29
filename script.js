@@ -1,3 +1,8 @@
+// Initialize EmailJS (Replace "YOUR_PUBLIC_KEY" with your actual key to activate)
+if (typeof emailjs !== 'undefined') {
+    emailjs.init("YOUR_PUBLIC_KEY");
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize Lucide Icons
     lucide.createIcons();
@@ -21,15 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ----------------------------------------------------------------
        THEME SWITCHER (Light / Dark Mode)
     ---------------------------------------------------------------- */
-    // Check local storage or system preference
+    // Check local storage or default to dark theme
     const savedTheme = localStorage.getItem('portfolio-theme');
     
     if (savedTheme) {
         body.className = savedTheme;
     } else {
-        // System preference default
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        body.className = prefersDark ? 'dark-theme' : 'light-theme';
+        body.className = 'dark-theme';
     }
 
     // Toggle theme handler
@@ -248,18 +251,52 @@ document.addEventListener('DOMContentLoaded', () => {
             submitIcon.setAttribute('data-lucide', 'loader');
             lucide.createIcons(); // refresh icons list
 
-            // Simulate server network latency (1.5 seconds)
-            setTimeout(() => {
-                // Success Mocking
-                showFormMessage('Thank you! Your message has been sent successfully.', 'success');
-                contactForm.reset();
-                
-                // Restore button state
-                submitBtn.disabled = false;
-                submitText.innerText = 'Send Message';
-                submitIcon.setAttribute('data-lucide', 'send');
-                lucide.createIcons();
-            }, 1500);
+            // EmailJS Integration preparation
+            const emailjsParams = {
+                from_name: name,
+                reply_to: email,
+                subject: subject,
+                message: message,
+                to_email: 'vaddeniranjan58@gmail.com'
+            };
+
+            // Check if EmailJS is initialized and active
+            if (typeof emailjs !== 'undefined') {
+                // To activate, make sure to initialize with your public key, then replace service/template ID:
+                emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", emailjsParams)
+                    .then(() => {
+                        showFormMessage('Thank you! Your message has been sent successfully.', 'success');
+                        contactForm.reset();
+                        
+                        // Restore button state
+                        submitBtn.disabled = false;
+                        submitText.innerText = 'Send Message';
+                        submitIcon.setAttribute('data-lucide', 'send');
+                        lucide.createIcons();
+                    })
+                    .catch((error) => {
+                        console.error('EmailJS Error:', error);
+                        showFormMessage('Oops! EmailJS failed. Please try again or email directly.', 'error');
+                        
+                        // Restore button state
+                        submitBtn.disabled = false;
+                        submitText.innerText = 'Send Message';
+                        submitIcon.setAttribute('data-lucide', 'send');
+                        lucide.createIcons();
+                    });
+            } else {
+                // Fallback simulation (if EmailJS not set up yet)
+                setTimeout(() => {
+                    showFormMessage('Thank you! Your message has been sent successfully (Mock Mode).', 'success');
+                    contactForm.reset();
+                    
+                    // Restore button state
+                    submitBtn.disabled = false;
+                    submitText.innerText = 'Send Message';
+                    submitIcon.setAttribute('data-lucide', 'send');
+                    lucide.createIcons();
+                }, 1500);
+            }
         });
     }
 
@@ -305,12 +342,12 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     if (downloadResumeBtn) {
-        fetch('Niranjan_DA_Resume.pdf', { method: 'HEAD' })
+        fetch('resume.pdf', { method: 'HEAD' })
             .then(response => {
                 if (!response.ok) {
                     setupResumeFallback();
                 } else {
-                    resumeStatusMsg.innerHTML = '<span class="status-available"><i data-lucide="check-circle" class="text-green"></i> Niranjan_DA_Resume.pdf is available on the server.</span>';
+                    resumeStatusMsg.innerHTML = '<span class="status-available"><i data-lucide="check-circle" class="text-green"></i> resume.pdf is available on the server.</span>';
                     lucide.createIcons();
                 }
             })
@@ -324,7 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             openResumeModal();
         });
-        resumeStatusMsg.innerHTML = '<span class="status-missing"><i data-lucide="alert-circle" class="text-blue"></i> Niranjan_DA_Resume.pdf is missing. Click button to view placeholder resume.</span>';
+        resumeStatusMsg.innerHTML = '<span class="status-missing"><i data-lucide="alert-circle" class="text-blue"></i> resume.pdf is missing. Click button to view placeholder resume.</span>';
         lucide.createIcons();
     }
 
